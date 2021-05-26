@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ben Gordon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main">
+    <div>
+      <h1 class="name">BEN GORDON</h1>
+    </div>
+
+    <div class="list">
+
+      <h3 id="about-btn">ABOUT</h3>
+        <div class="about-section-hidden">
+          <div class="avatar-container">
+            <img class="avatar-img" src="images/avatar.png" alt="avatar">
+          </div>
+          <div class="about-tabs-section">
+            <div class="about-tab-active" id='who-tab'>Who</div>
+            <div class="about-tab-inactive" id='what-tab'>What</div>
+            <div class="about-tab-inactive" id='where-tab'>Where</div>
+            <div class="about-tab-inactive" id='when-tab'>When</div>
+            <div class="about-tab-inactive" id='how-tab'>How</div>
+            <div class="about-tab-inactive" id='why-tab'>Why</div>
+          </div>
+          <div class="about-texts-section">
+            <div class="about-text-visible" id='who-text'>
+              <span>
+                I am Ben Gordon. I am an aspiring Frontend Web Developer with a passion for UX/UI and a keen eye for detail
+              </span>
+            </div>
+            <div class="about-text-hidden" id='what-text'>
+              <span>I do frontend web development and UX/UI Design</span>
+            </div>
+            <div class="about-text-hidden" id='where-text'>
+              <span>I am based in Berlin, Germany, but available for remote work</span>
+            </div>
+            <div class="about-text-hidden" id='when-text'>
+              <span>1+ year web development 2+ year design 3+ year something else</span>
+            </div>
+            <div class="about-text-hidden" id='how-text'>
+              <span>The tools I use are mainly HTML, CSS, JS and Figma</span>
+            </div>
+            <div class="about-text-hidden" id='why-text'>
+              <span>I started out in Urban Design and then wanted to do digital stuff and found that they are quite similar because UX is always at their core.</span>
+            </div>
+          </div>
+        </div>
+
+      <h3 id="tests-btn">PROJECTS</h3>
+        <div class="tests-section">
+
+          <div class="test-item-1">
+            <img class="shadow-boxing-img" src="images/shadow_boxing.png" alt="shadow">
+            <p class="project-title">Shadow Boxing</p>
+            <div class="text-area-hidden">
+              <div class="tabs-section">
+                <div class="tab-active" id="problem-active">Problem</div>
+                <div class="tab-inactive" id="process-inactive">Process</div>
+                <div class="tab-inactive" id="solution-inactive">Solution</div>
+              </div>
+                <div class="shadow-problem-text-visible">Box shadows can be a great tool to add dimension to your UI, but the CSS box-shadow property is not intutive. Developers learning to use box shadow often have a difficult time learning how to use the property because they don’t have a playground to try things out. And who can remember the order of the property variables 5px 9px 0px 10px ... </div>
+                <div class="shadow-process-text-hidden">I examined the existing box-shadow generators to see what worked and what didn't. I found that they were ugly, not simple or inutitive to use, and don't allow you to customize the colors, which is a crucial component of box-shadows' efficacy</div>
+                <div class="shadow-solution-text-hidden">I decided to use a dull grey color palatte in order to not distract from whatever design color palatte the use has in mind. I used clean everything because that's how I like it. So fresh. And so clean.</div>
+            </div>
+          </div>
+
+          <div class="test-item-2">
+            <img class="innermile-img" src="images/innermile_3.png" alt="innermile">
+            <p class="project-title">InnerMile</p>
+            <div class="innermile-text-area-hidden">
+              <div class="tabs-section">
+                <div class="tab-active" id="innermile-problem-active">Problem</div>
+                <div class="tab-inactive" id="innermile-process-inactive">Process</div>
+                <div class="tab-inactive" id="innermile-solution-inactive">Solution</div>
+              </div>
+                <div class="innermile-problem-text-visible">People want to buy stuff locally, but they can't because Amazon is evil!</div>
+                <div class="innermile-process-text-hidden">Look at Google maps and Instagram and think about what small shops actually need</div>
+                <div class="innermile-solution-text-hidden">I mean just look at it! And it's super cool that it generates a route and tells you how long it will take to get to the shop!</div>
+            </div>
+          </div>
+
+          <div class="test-item-3">
+            <img class="habit-img" src="images/habit_1.png" alt="habit">
+            <p class="project-title">Habit App</p>
+            <div class="habit-text-area-hidden">
+              <div class="tabs-section">
+                <div class="tab-active" id="habit-problem-active">Problem</div>
+                <div class="tab-inactive" id="habit-process-inactive">Process</div>
+                <div class="tab-inactive" id="habit-solution-inactive">Solution</div>
+              </div>
+                <div class="habit-problem-text-visible">I needed a simple app to track my habits. The existing ones try to do too much, and ironically make it harder for me to stick with my habits</div>
+                <div class="habit-process-text-hidden">Downloaded a bunch of apps. Stole what I liked. Got rid of what I didn't</div>
+                <div class="habit-solution-text-hidden">Look at this beautiful app!</div>
+            </div>
+          </div>
+        </div>
+
+      <h3>CONTACT</h3>
+
+    </div>
+    <div class="background-circle"></div>
+  </div>
+
+</body>
+  <script src="scripts.js"></script>
+</html>
