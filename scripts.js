@@ -1,6 +1,7 @@
 // general elements
 const aboutBtn = document.querySelector("#about-btn");
 const aboutSection = document.querySelector('.about-section-hidden');
+const backgroundCircle = document.querySelector('.background-circle');
 
 const testsBtn = document.querySelector('#tests-btn');
 const testsSection = document.querySelector('.tests-section');
@@ -470,6 +471,9 @@ testItem3.addEventListener('mouseleave', (e) => {
 
 shadowImage.addEventListener('click', (event) => {
   testItem1.classList.toggle('test-item-1-large');
+  testItem1.classList.toggle('test-item-1');
+
+
   testItem2.classList.toggle('test-item-2-hidden');
   testItem3.classList.toggle('test-item-3-hidden');
   shadowImage.classList.toggle('shadow-boxing-img-large');
@@ -477,40 +481,44 @@ shadowImage.addEventListener('click', (event) => {
   textArea.classList.toggle('text-area-visible');
   projectTitle[0].classList.toggle('project-title-hidden');
 
-  // solutionBtn.classList.add('solution-inactive');
-  // problemBtn.classList.add('problem-active');
-  // processBtn.classList.add('process-inactive');
+  backgroundCircle.classList.toggle('background-circle-shadow');
 })
 
 innermileImage.addEventListener('click', (event) => {
   testItem1.classList.toggle('test-item-1-hidden');
+
   testItem2.classList.toggle('test-item-2-large');
+  testItem2.classList.toggle('test-item-2');
+
   testItem3.classList.toggle('test-item-3-hidden');
+
   shadowImage.classList.toggle('shadow-boxing-img-hidden');
   innermileImage.classList.toggle('innermile-img-large');
   testsSection.style.height = '500px';
   innermileTextArea.classList.toggle('innermile-text-area-visible');
   projectTitle[1].classList.toggle('project-title-hidden');
 
-  // solutionBtn.classList.add('solution-inactive');
-  // problemBtn.classList.add('problem-active');
-  // processBtn.classList.add('process-inactive');
+  backgroundCircle.classList.toggle('background-circle-innermile');
+  // backgroundCircle.classList.remove('background-circle');
+
 })
 
 habitImage.addEventListener('click', (event) => {
   testItem1.classList.toggle('test-item-1-hidden');
+
   testItem2.classList.toggle('test-item-2-hidden');
+
   testItem3.classList.toggle('test-item-3-large');
+  testItem3.classList.toggle('test-item-3');
+
   shadowImage.classList.toggle('shadow-boxing-img-hidden');
-  innermileImage.classList.toggle('innermile-img-large');
+  innermileImage.classList.toggle('innermile-img-hidden');
   habitImage.classList.toggle('habit-img-large');
   testsSection.style.height = '500px';
   habitTextArea.classList.toggle('habit-text-area-visible');
   projectTitle[2].classList.toggle('project-title-hidden');
 
-  // solutionBtn.classList.add('solution-inactive');
-  // problemBtn.classList.add('problem-active');
-  // processBtn.classList.add('process-inactive');
+  backgroundCircle.classList.toggle('background-circle-habit');
 })
 
 testsBtn.addEventListener('click', (event) => {
@@ -519,4 +527,5 @@ testsBtn.addEventListener('click', (event) => {
 
 aboutBtn.addEventListener('click', (event) => {
   aboutSection.classList.toggle('about-section-visibile');
+  backgroundCircle.classList.toggle('background-circle-about');
 })
