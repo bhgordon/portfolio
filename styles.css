@@ -56,7 +56,20 @@ h3 {
   position: absolute;
   filter: blur(100px);
   z-index: 1;
+  animation: change-color 15s infinite alternate;
   transition: all 1s;
+}
+
+@keyframes change-color {
+  0% {
+    background-color: #b7c2aebd;
+  }
+  50% {
+    background-color: #cdbdbdad;
+  }
+  100% {
+    background-color: #99abadb5;
+  }
 }
 
 .background-circle-about {
@@ -79,6 +92,19 @@ h3 {
   left: 35%;
   border-radius: 39% 61% 35% 65% / 47% 50% 50% 52%;
   background-color: #cdbdbd;
+  position: absolute;
+  filter: blur(100px);
+  z-index: 1;
+  transition: all 1s;
+}
+
+.background-circle-grey {
+  height: 80vh;
+  width: 80vh;
+  top: 10%;
+  left: 35%;
+  border-radius: 39% 61% 35% 65% / 47% 50% 50% 52%;
+  background-color: lightgrey;
   position: absolute;
   filter: blur(100px);
   z-index: 1;
@@ -162,6 +188,7 @@ h3 {
   text-decoration-thickness: 3px;
   text-underline-offset: 5px;
   margin: 10px;
+  padding-left: 10px;
   margin-left: 20px;
   font-family: 'Karla', sans-serif;
   cursor: pointer;

@@ -479,7 +479,7 @@ shadowImage.addEventListener('click', (event) => {
   shadowImage.classList.toggle('shadow-boxing-img-large');
   testsSection.style.height = '500px';
   textArea.classList.toggle('text-area-visible');
-  projectTitle[0].classList.toggle('project-title-hidden');
+  projectTitle[1].classList.toggle('project-title-hidden');
 
   backgroundCircle.classList.toggle('background-circle-shadow');
 })
@@ -496,7 +496,7 @@ innermileImage.addEventListener('click', (event) => {
   innermileImage.classList.toggle('innermile-img-large');
   testsSection.style.height = '500px';
   innermileTextArea.classList.toggle('innermile-text-area-visible');
-  projectTitle[1].classList.toggle('project-title-hidden');
+  projectTitle[0].classList.toggle('project-title-hidden');
 
   backgroundCircle.classList.toggle('background-circle-innermile');
   // backgroundCircle.classList.remove('background-circle');
@@ -523,6 +523,9 @@ habitImage.addEventListener('click', (event) => {
 
 testsBtn.addEventListener('click', (event) => {
   testsSection.classList.toggle('tests-section-visible');
+  backgroundCircle.classList.toggle('background-circle-grey');
+  backgroundCircle.classList.toggle('background-circle');
+
 })
 
 aboutBtn.addEventListener('click', (event) => {
