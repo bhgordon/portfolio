@@ -1,9 +1,12 @@
 // general elements
+const backgroundCircle = document.querySelector('.background-circle');
 const aboutBtn = document.querySelector("#about-btn");
 const aboutSection = document.querySelector('.about-section-hidden');
-const backgroundCircle = document.querySelector('.background-circle');
+const contactBtn = document.querySelector('#contact-btn');
+const contactList = document.querySelector('.contact-list-hidden');
+
 const backBtn = document.querySelectorAll('.back-btn');
-console.log(backBtn);
+
 
 const testsBtn = document.querySelector('#tests-btn');
 const testsSection = document.querySelector('.tests-section');
@@ -566,6 +569,7 @@ shadowImage.addEventListener('click', (event) => {
   projectTitle[1].classList.toggle('project-title-hidden');
 
   backgroundCircle.classList.toggle('background-circle-shadow');
+  backgroundCircle.classList.remove('background-circle-grey');
 })
 
 innermileImage.addEventListener('click', (event) => {
@@ -583,8 +587,6 @@ innermileImage.addEventListener('click', (event) => {
   projectTitle[0].classList.toggle('project-title-hidden');
 
   backgroundCircle.classList.toggle('background-circle-innermile');
-  // backgroundCircle.classList.remove('background-circle');
-
 })
 
 habitImage.addEventListener('click', (event) => {
@@ -615,4 +617,12 @@ testsBtn.addEventListener('click', (event) => {
 aboutBtn.addEventListener('click', (event) => {
   aboutSection.classList.toggle('about-section-visibile');
   backgroundCircle.classList.toggle('background-circle-about');
+})
+
+
+// contact area
+
+contactBtn.addEventListener('click', (e) => {
+  contactList.classList.toggle('contact-list-hidden');
+  contactList.classList.toggle('contact-list');
 })

@@ -240,11 +240,12 @@ h3 {
   position: absolute;
   opacity: 0;
   height: 0;
+  display: none;
 }
 
 .tests-section-visible {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: none;
   position: static;
   opacity: 1;
   height: 340px;
@@ -367,6 +368,20 @@ h3 {
   cursor: pointer;
   text-decoration: underline;
   letter-spacing: 0.5px;
+}
+
+.project-link {
+  text-align: right;
+  margin-top: auto;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.project-link:hover {
+  letter-spacing: 0.5px;
+  text-decoration: underline;
 }
 
 .test-item-1 {
@@ -707,6 +722,9 @@ h3 {
 .text-area-visible {
   display: flex;
   flex-direction: column;
+  height: 350px;
+  max-width: 500px;
+  width: ;
   opacity: 1;
   transition: opacity 2s;
 }
@@ -720,6 +738,8 @@ h3 {
 .innermile-text-area-visible {
   display: flex;
   flex-direction: column;
+  height: 300px;
+  max-width: 500px;
   opacity: 1;
   transition: opacity 2s;
 }
@@ -733,10 +753,39 @@ h3 {
 .habit-text-area-visible {
   display: flex;
   flex-direction: column;
+  height: 400px;
+  max-width: 500px;
   opacity: 1;
   transition: opacity 2s;
 }
 
 .project-title-hidden {
   display: none;
+}
+
+/*contact area*/
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-left: 40px;
+}
+
+.contact-list-hidden {
+  display: none;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: grey;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.contact-link:hover {
+  letter-spacing: 0.5px;
+  color: black;
+  text-decoration: underline;
 }
