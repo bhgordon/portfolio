@@ -2,6 +2,8 @@
 const aboutBtn = document.querySelector("#about-btn");
 const aboutSection = document.querySelector('.about-section-hidden');
 const backgroundCircle = document.querySelector('.background-circle');
+const backBtn = document.querySelectorAll('.back-btn');
+console.log(backBtn);
 
 const testsBtn = document.querySelector('#tests-btn');
 const testsSection = document.querySelector('.tests-section');
@@ -305,7 +307,6 @@ whyTab.addEventListener('click', (e) => {
   whyText.classList.remove('about-text-hidden');
 })
 
-
 // project section tabs
 problemBtn.addEventListener('click', (e) => {
   problemBtn.classList.remove('tab-inactive');
@@ -465,6 +466,89 @@ testItem3.addEventListener('mouseleave', (e) => {
   habitImage.classList.remove('habit-img-medium');
   habitImage.classList.add('habit-img');
 })
+
+
+
+//project events
+
+backBtn.forEach(item => {
+  item.addEventListener('click', (e) => {
+    testItem1.classList.add('test-item-1');
+    testItem1.classList.remove('test-item-1-large');
+    testItem2.classList.add('test-item-2');
+    testItem2.classList.remove('test-item-2-large');
+    testItem3.classList.add('test-item-3');
+    testItem3.classList.remove('test-item-3-large');
+
+    shadowImage.classList.add('shadow-boxing-img');
+    shadowImage.classList.remove('shadow-boxing-img-large');
+    shadowImage.classList.remove('shadow-boxing-img-hidden');
+
+    innermileImage.classList.add('innermile-img');
+    innermileImage.classList.remove('innermile-img-large');
+    innermileImage.classList.remove('innermile-img-hidden');
+
+    habitImage.classList.add('habit-img');
+    habitImage.classList.remove('habit-img-large');
+    habitImage.classList.remove('habit-img-hidden');
+
+    innermileTextArea.classList.add('innermile-text-area-hidden');
+    innermileTextArea.classList.remove('innermile-text-area-visible');
+    textArea.classList.add('text-area-hidden');
+    textArea.classList.remove('text-area-visible');
+    habitTextArea.classList.add('habit-text-area-hidden');
+    habitTextArea.classList.remove('habit-text-area-visible');
+
+    projectTitle[0].classList.add('project-title');
+    projectTitle[0].classList.remove('project-title-hidden');
+    projectTitle[1].classList.add('project-title');
+    projectTitle[1].classList.remove('project-title-hidden');
+    projectTitle[2].classList.add('project-title');
+    projectTitle[2].classList.remove('project-title-hidden');
+
+    testItem1.classList.add('test-item-1');
+    testItem1.classList.remove('test-item-1-hidden');
+    testItem2.classList.add('test-item-2');
+    testItem2.classList.remove('test-item-2-hidden');
+    testItem3.classList.add('test-item-3');
+    testItem3.classList.remove('test-item-3-hidden');
+
+    backgroundCircle.classList.add('background-circle-grey');
+    backgroundCircle.classList.remove('background-circle-innermile');
+    backgroundCircle.classList.remove('background-circle-shadow');
+    backgroundCircle.classList.remove('background-circle-habit');
+  })
+})
+
+// backBtn[0].addEventListener('click', (e) => {
+//   testItem1.classList.add('test-item-1');
+//   testItem1.classList.remove('test-item-1-large');
+//   testItem2.classList.add('test-item-2');
+//   testItem2.classList.remove('test-item-2-large');
+//   testItem3.classList.add('test-item-3');
+//   testItem3.classList.remove('test-item-3-large');
+
+//   shadowImage.classList.add('shadow-boxing-img');
+//   shadowImage.classList.remove('shadow-boxing-img-large');
+//   shadowImage.classList.remove('shadow-boxing-img-hidden');
+
+//   innermileImage.classList.add('innermile-img');
+//   innermileImage.classList.remove('innermile-img-large');
+//   habitImage.classList.add('habit-img');
+//   habitImage.classList.remove('habit-img-large');
+
+//   innermileTextArea.classList.add('innermile-text-area-hidden');
+//   innermileTextArea.classList.remove('innermile-text-area-visible');
+//   projectTitle[0].classList.add('project-title');
+//   projectTitle[0].classList.remove('project-title-hidden');
+
+//   testItem1.classList.add('test-item-1');
+//   testItem1.classList.remove('test-item-1-hidden');
+//   testItem2.classList.add('test-item-2');
+//   testItem2.classList.remove('test-item-2-hidden');
+//   testItem3.classList.add('test-item-3');
+//   testItem3.classList.remove('test-item-3-hidden');
+// })
 
 
 // Image Events
