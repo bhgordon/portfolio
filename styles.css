@@ -248,7 +248,7 @@ h3 {
   flex-wrap: none;
   position: static;
   opacity: 1;
-  height: 340px;
+  height: 380px;
   transition: height .5s ease-out, opacity 1s ease-out;
 }
 
@@ -714,9 +714,9 @@ h3 {
 /*text areas*/
 
 .text-area-hidden {
-  /*position: absolute;*/
   opacity: 0;
   height: 0;
+  display: none;
 }
 
 .text-area-visible {
@@ -730,9 +730,9 @@ h3 {
 }
 
 .innermile-text-area-hidden {
-  /*position: absolute;*/
   opacity: 0;
   height: 0;
+  display: none;
 }
 
 .innermile-text-area-visible {
@@ -745,9 +745,9 @@ h3 {
 }
 
 .habit-text-area-hidden {
-  /*position: absolute;*/
   opacity: 0;
   height: 0;
+  display: none;
 }
 
 .habit-text-area-visible {

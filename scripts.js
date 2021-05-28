@@ -471,88 +471,61 @@ testItem3.addEventListener('mouseleave', (e) => {
 })
 
 
+// close items function
+const closeItems = () => {
+  testItem1.classList.add('test-item-1');
+  testItem1.classList.remove('test-item-1-large');
+  testItem2.classList.add('test-item-2');
+  testItem2.classList.remove('test-item-2-large');
+  testItem3.classList.add('test-item-3');
+  testItem3.classList.remove('test-item-3-large');
+
+  shadowImage.classList.add('shadow-boxing-img');
+  shadowImage.classList.remove('shadow-boxing-img-large');
+  shadowImage.classList.remove('shadow-boxing-img-hidden');
+
+  innermileImage.classList.add('innermile-img');
+  innermileImage.classList.remove('innermile-img-large');
+  innermileImage.classList.remove('innermile-img-hidden');
+
+  habitImage.classList.add('habit-img');
+  habitImage.classList.remove('habit-img-large');
+  habitImage.classList.remove('habit-img-hidden');
+
+  innermileTextArea.classList.add('innermile-text-area-hidden');
+  innermileTextArea.classList.remove('innermile-text-area-visible');
+  textArea.classList.add('text-area-hidden');
+  textArea.classList.remove('text-area-visible');
+  habitTextArea.classList.add('habit-text-area-hidden');
+  habitTextArea.classList.remove('habit-text-area-visible');
+
+  projectTitle[0].classList.add('project-title');
+  projectTitle[0].classList.remove('project-title-hidden');
+  projectTitle[1].classList.add('project-title');
+  projectTitle[1].classList.remove('project-title-hidden');
+  projectTitle[2].classList.add('project-title');
+  projectTitle[2].classList.remove('project-title-hidden');
+
+  testItem1.classList.add('test-item-1');
+  testItem1.classList.remove('test-item-1-hidden');
+  testItem2.classList.add('test-item-2');
+  testItem2.classList.remove('test-item-2-hidden');
+  testItem3.classList.add('test-item-3');
+  testItem3.classList.remove('test-item-3-hidden');
+
+  backgroundCircle.classList.add('background-circle-grey');
+  backgroundCircle.classList.remove('background-circle-innermile');
+  backgroundCircle.classList.remove('background-circle-shadow');
+  backgroundCircle.classList.remove('background-circle-habit');
+}
 
 //project events
 
 backBtn.forEach(item => {
   item.addEventListener('click', (e) => {
-    testItem1.classList.add('test-item-1');
-    testItem1.classList.remove('test-item-1-large');
-    testItem2.classList.add('test-item-2');
-    testItem2.classList.remove('test-item-2-large');
-    testItem3.classList.add('test-item-3');
-    testItem3.classList.remove('test-item-3-large');
-
-    shadowImage.classList.add('shadow-boxing-img');
-    shadowImage.classList.remove('shadow-boxing-img-large');
-    shadowImage.classList.remove('shadow-boxing-img-hidden');
-
-    innermileImage.classList.add('innermile-img');
-    innermileImage.classList.remove('innermile-img-large');
-    innermileImage.classList.remove('innermile-img-hidden');
-
-    habitImage.classList.add('habit-img');
-    habitImage.classList.remove('habit-img-large');
-    habitImage.classList.remove('habit-img-hidden');
-
-    innermileTextArea.classList.add('innermile-text-area-hidden');
-    innermileTextArea.classList.remove('innermile-text-area-visible');
-    textArea.classList.add('text-area-hidden');
-    textArea.classList.remove('text-area-visible');
-    habitTextArea.classList.add('habit-text-area-hidden');
-    habitTextArea.classList.remove('habit-text-area-visible');
-
-    projectTitle[0].classList.add('project-title');
-    projectTitle[0].classList.remove('project-title-hidden');
-    projectTitle[1].classList.add('project-title');
-    projectTitle[1].classList.remove('project-title-hidden');
-    projectTitle[2].classList.add('project-title');
-    projectTitle[2].classList.remove('project-title-hidden');
-
-    testItem1.classList.add('test-item-1');
-    testItem1.classList.remove('test-item-1-hidden');
-    testItem2.classList.add('test-item-2');
-    testItem2.classList.remove('test-item-2-hidden');
-    testItem3.classList.add('test-item-3');
-    testItem3.classList.remove('test-item-3-hidden');
-
-    backgroundCircle.classList.add('background-circle-grey');
-    backgroundCircle.classList.remove('background-circle-innermile');
-    backgroundCircle.classList.remove('background-circle-shadow');
-    backgroundCircle.classList.remove('background-circle-habit');
+    closeItems();
   })
 })
-
-// backBtn[0].addEventListener('click', (e) => {
-//   testItem1.classList.add('test-item-1');
-//   testItem1.classList.remove('test-item-1-large');
-//   testItem2.classList.add('test-item-2');
-//   testItem2.classList.remove('test-item-2-large');
-//   testItem3.classList.add('test-item-3');
-//   testItem3.classList.remove('test-item-3-large');
-
-//   shadowImage.classList.add('shadow-boxing-img');
-//   shadowImage.classList.remove('shadow-boxing-img-large');
-//   shadowImage.classList.remove('shadow-boxing-img-hidden');
-
-//   innermileImage.classList.add('innermile-img');
-//   innermileImage.classList.remove('innermile-img-large');
-//   habitImage.classList.add('habit-img');
-//   habitImage.classList.remove('habit-img-large');
-
-//   innermileTextArea.classList.add('innermile-text-area-hidden');
-//   innermileTextArea.classList.remove('innermile-text-area-visible');
-//   projectTitle[0].classList.add('project-title');
-//   projectTitle[0].classList.remove('project-title-hidden');
-
-//   testItem1.classList.add('test-item-1');
-//   testItem1.classList.remove('test-item-1-hidden');
-//   testItem2.classList.add('test-item-2');
-//   testItem2.classList.remove('test-item-2-hidden');
-//   testItem3.classList.add('test-item-3');
-//   testItem3.classList.remove('test-item-3-hidden');
-// })
-
 
 // Image Events
 
@@ -607,22 +580,63 @@ habitImage.addEventListener('click', (event) => {
   backgroundCircle.classList.toggle('background-circle-habit');
 })
 
+
+// Main Menu Area
+
 testsBtn.addEventListener('click', (event) => {
   testsSection.classList.toggle('tests-section-visible');
   backgroundCircle.classList.toggle('background-circle-grey');
   backgroundCircle.classList.toggle('background-circle');
 
+  aboutSection.classList.add('about-section-hidden');
+  aboutSection.classList.remove('about-section-visibile');
+
+
+  contactList.classList.add('contact-list-hidden');
+  contactList.classList.remove('contact-list');
 })
 
 aboutBtn.addEventListener('click', (event) => {
+  closeItems();
   aboutSection.classList.toggle('about-section-visibile');
-  backgroundCircle.classList.toggle('background-circle-about');
+
+  testsSection.classList.add('tests-section');
+  testsSection.classList.remove('tests-section-visible');
+
+  contactList.classList.add('contact-list-hidden');
+  contactList.classList.remove('contact-list');
+
+  backgroundCircle.classList.add('background-circle');
+  backgroundCircle.classList.remove('background-circle-grey');
+  backgroundCircle.classList.remove('background-circle-habit');
+  backgroundCircle.classList.remove('background-circle-innermile');
+  backgroundCircle.classList.remove('background-circle-about');
 })
 
-
-// contact area
-
 contactBtn.addEventListener('click', (e) => {
+  closeItems();
   contactList.classList.toggle('contact-list-hidden');
   contactList.classList.toggle('contact-list');
+
+  testsSection.classList.add('tests-section');
+  testsSection.classList.remove('tests-section-visible');
+
+
+  aboutSection.classList.add('about-section-hidden');
+  aboutSection.classList.remove('about-section-visibile');
+
+  backgroundCircle.classList.add('background-circle');
+  backgroundCircle.classList.remove('background-circle-grey');
+  backgroundCircle.classList.remove('background-circle-habit');
+  backgroundCircle.classList.remove('background-circle-innermile');
+  backgroundCircle.classList.remove('background-circle-about');
+
+  testItem1.classList.add(".test-item-1");
+  testItem1.classList.remove(".test-item-1-large");
+
+  testItem2.classList.add(".test-item-2");
+  testItem2.classList.remove(".test-item-2-large");
+
+  testItem3.classList.add(".test-item-3");
+  testItem3.classList.remove(".test-item-3-large");
 })
