@@ -172,6 +172,12 @@ h3 {
   z-index: 3;
 }
 
+@media screen and (max-width: 767px) {
+  .name {
+    font-size: 36px;
+  }
+}
+
 
 /*about*/
 
