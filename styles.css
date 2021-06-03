@@ -16,7 +16,6 @@ h1 {
 }
 
 h3:hover {
-  /*font-weight: 500;*/
   cursor: pointer;
   color: #262626;
 }
@@ -175,6 +174,18 @@ h3 {
 
 
 /*about*/
+
+#about-btn {
+  width: fit-content;
+}
+
+#tests-btn {
+  width: fit-content;
+}
+
+#contact-btn {
+  width: fit-content;
+}
 
 .about-section-hidden {
   display: none;
